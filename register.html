@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styling.css">
+    
+</head>
+<body>
+    <main>
+
+        <div class="mainDiv container text-center">
+
+            <h1 class="mainh1ForLogin">
+                Smart Login System
+            </h1>
+
+
+         <form class="mainForm" >
+
+            <input oninput="validationAll(this);" type="text" id="userName" placeholder="Enter your name" class="form-control bg-transparent mt-3">
+            <div class="massege mt-3 d-none text-danger">
+            </div>
+            
+            <input oninput="validationAll(this);" type="text" id="userEmail" placeholder="Enter your email" class="form-control bg-transparent mt-3">
+
+            <div class="massege mt-3 d-none text-danger">     
+            </div>
+
+            <input oninput="validationAll(this);" type="password" id="userPassword" placeholder="Enter your password" class="form-control bg-transparent mt-3">
+
+            
+            <div class="massegeSuccess mt-3 d-none  text-success">
+                <p>Success</p>
+            </div>
+            <div class="massegeAlready mt-3 d-none text-danger">
+                <p>email already exists</p>
+            </div>
+
+
+            <button onclick="addSignUp();" class="form-control mt-5 btn btn-outline-info text-light">Sign Up</button>
+
+        </form>
+
+        <!-- <div class="buttonForRegister container">
+            <button onclick="addSignUp();" class="form-control mt-5 btn btn-outline-info text-light">Sign Up</button>
+
+        </div> -->
+
+        <p class="mainP  mt-2 mb-5">Don’t have an account? <a href="index.html">Log In</a></p>
+
+        </div>
+
+
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
